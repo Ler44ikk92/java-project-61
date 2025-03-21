@@ -216,7 +216,6 @@ public class Engine {
             int k = 0;
             var h = "";
             var rand = Math.round(Math.random() * roundRandom); //random step
-            System.out.println("rand = " + rand);
             for (var j = 2; j < rand; j++) {
                 if (rand % j  == 0) {
                     k = k + 1;
@@ -227,7 +226,6 @@ public class Engine {
             } else {
                 h = "no";
             }
-            System.out.println(k);
             System.out.println("Question: " + rand);
             String answer = scanner.next();
             System.out.println("Your answer: " + answer);
