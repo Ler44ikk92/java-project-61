@@ -65,6 +65,7 @@ public class Engine {
         if (n == 3) {
             System.out.println("Congratulations, " + userName + "!");
         }
+
         scanner.close();
     }
 
