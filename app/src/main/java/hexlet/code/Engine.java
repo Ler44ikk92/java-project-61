@@ -215,8 +215,8 @@ public class Engine {
         for (var i = 0; i < 3; i++) {
             int k = 0;
             var h = "";
-            //var rand = Math.round(Math.random() * roundRandom); //random step
-            var rand = 2;
+            var rand = Math.round(Math.random() * roundRandom); //random step
+            //var rand = 2;
             for (var j = 2; j <= rand; j++) {
                 if (rand % j  == 0) {
                     k = k + 1;
