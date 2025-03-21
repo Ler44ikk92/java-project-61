@@ -41,10 +41,11 @@ public class Engine {
         String userName = scanner.next();
         System.out.println("Hello, " + userName + "!");
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
-
+        int count = 3;
+        int roundRandom = 100;
         int n = 0;
-        for (var i = 0; i < 3; i++) {
-            var rand = Math.round(Math.random() * 100);
+        for (var i = 0; i < count; i++) {
+            var rand = Math.round(Math.random() * roundRandom);
             System.out.println("Question: " + rand);
             String correctAnswer;
             if (rand % 2 == 0) {
@@ -62,7 +63,7 @@ public class Engine {
             System.out.println("Correct!");
             n += 1;
         }
-        if (n == 3) {
+        if (n == count) {
             System.out.println("Congratulations, " + userName + "!");
         }
 
@@ -74,11 +75,12 @@ public class Engine {
         String userName = scanner.next();
         System.out.println("Hello, " + userName + "!");
         System.out.println("What is the result of the expression?");
-
+        int count = 3;
         int n = 0;
-        for (var i = 0; i < 3; i++) {
-            var n1 = Math.round(Math.random() * 10);
-            var n2 = Math.round(Math.random() * 10);
+        int roundRandom = 10;
+        for (var i = 0; i < count; i++) {
+            var n1 = Math.round(Math.random() * roundRandom);
+            var n2 = Math.round(Math.random() * roundRandom);
             String chars = "+-*";
             Random rnd = new Random();
             char c = chars.charAt(rnd.nextInt(chars.length()));
@@ -112,7 +114,7 @@ public class Engine {
             n += 1;
         }
 
-        if (n == 3) {
+        if (n == count) {
             System.out.println("Congratulations, " + userName + "!");
         }
         scanner.close();
@@ -124,9 +126,12 @@ public class Engine {
         System.out.println("Hello, " + userName + "!");
         System.out.println("Find the greatest common divisor of given numbers.");
         int n = 0;
-        for (var i = 0; i < 3; i++) {
-            var n1 = Math.round(Math.random() * 100) + 1;
-            var n2 = Math.round(Math.random() * 100) + 1;
+        int count = 3;
+        int roundRandom = 100;
+        int r = 1;
+        for (var i = 0; i < count; i++) {
+            var n1 = Math.round(Math.random() * roundRandom) + r;
+            var n2 = Math.round(Math.random() * roundRandom) + r;
             System.out.println("Question: " + n1 + " " + n2);
             while (n2 != 0) {
                 int temp = (int) n2;
@@ -143,7 +148,7 @@ public class Engine {
             System.out.println("Correct!");
             n += 1;
         }
-        if (n == 3) {
+        if (n == count) {
             System.out.println("Congratulations, " + userName + "!");
         }
         scanner.close();
@@ -155,17 +160,20 @@ public class Engine {
         System.out.println("Hello, " + userName + "!");
         System.out.println("What number is missing in the progression?");
         int n = 0;
-        for (var i = 0; i < 3; i++) {
+        int count = 3;
+        int roundRandom = 10;
+        int r = 1;
+        for (var i = 0; i < count; i++) {
             int k = 0;
             int n2 = 0;
             int h = 0;
-            var randStep = Math.round(Math.random() * 10); //random step
+            var randStep = Math.round(Math.random() * roundRandom); //random step
             int min = 5;
             int max = 10;
             Random rand = new Random();
-            int randLen = rand.nextInt(max - min + 1) + min;
+            int randLen = rand.nextInt(max - min + r) + min;
             Random rand2 = new Random();
-            int randHint = rand2.nextInt(randLen - 1 + 1) + 1;
+            int randHint = rand2.nextInt(randLen - r + r) + r;
             System.out.print("Question: ");
             while (k < randLen) {
                 n2 = (int) randStep + n2;
@@ -189,7 +197,7 @@ public class Engine {
             System.out.println("Correct!");
             n += 1;
         }
-        if (n == 3) {
+        if (n == count) {
             System.out.println("Congratulations, " + userName + "!");
         }
         scanner.close();
@@ -201,12 +209,13 @@ public class Engine {
         System.out.println("Hello, " + userName + "!");
         System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
 
-
+        int count = 3;
+        int roundRandom = 20;
         int n = 0;
         for (var i = 0; i < 3; i++) {
             int k = 0;
             var h = "";
-            var rand = Math.round(Math.random() * 20); //random step
+            var rand = Math.round(Math.random() * roundRandom); //random step
             System.out.println("rand = " + rand);
             for (var j = 2; j < rand; j++) {
                 if (rand % j  == 0) {
@@ -230,7 +239,7 @@ public class Engine {
             System.out.println("Correct!");
             n += 1;
         }
-        if (n == 3) {
+        if (n == count) {
             System.out.println("Congratulations, " + userName + "!");
         }
         scanner.close();
