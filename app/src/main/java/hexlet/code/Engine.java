@@ -62,6 +62,10 @@ public class Engine {
             System.out.println("Correct!");
             n += 1;
         }
+        if (n == 3) {
+            System.out.println("Congratulations, " + userName + "!");
+        }
+        scanner.close();
     }
 
     public static void game3(Scanner scanner) {
