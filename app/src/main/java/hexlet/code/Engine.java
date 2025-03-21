@@ -40,7 +40,7 @@ public class Engine {
         Engine.welcomeMessage();
         String userName = scanner.next();
         System.out.println("Hello, " + userName + "!");
-        System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'");
+        System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
 
         int n = 0;
         for (var i = 0; i < 3; i++) {
