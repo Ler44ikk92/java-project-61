@@ -41,8 +41,8 @@ public class Engine {
         String userName = scanner.next();
         System.out.println("Hello, " + userName + "!");
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
-        int count = 3;
-        int roundRandom = 100;
+        final int count = 3;
+        final int roundRandom = 100;
         int n = 0;
         for (var i = 0; i < count; i++) {
             var rand = Math.round(Math.random() * roundRandom);
@@ -75,7 +75,7 @@ public class Engine {
         String userName = scanner.next();
         System.out.println("Hello, " + userName + "!");
         System.out.println("What is the result of the expression?");
-        int count = 3;
+        final int count = 3;
         int n = 0;
         int roundRandom = 10;
         for (var i = 0; i < count; i++) {
@@ -126,8 +126,8 @@ public class Engine {
         System.out.println("Hello, " + userName + "!");
         System.out.println("Find the greatest common divisor of given numbers.");
         int n = 0;
-        int count = 3;
-        int roundRandom = 100;
+        final int count = 3;
+        final int roundRandom = 100;
         int r = 1;
         for (var i = 0; i < count; i++) {
             var n1 = Math.round(Math.random() * roundRandom) + r;
@@ -160,8 +160,8 @@ public class Engine {
         System.out.println("Hello, " + userName + "!");
         System.out.println("What number is missing in the progression?");
         int n = 0;
-        int count = 3;
-        int roundRandom = 10;
+        final int count = 3;
+        final int roundRandom = 10;
         int r = 1;
         for (var i = 0; i < count; i++) {
             int k = 0;
@@ -209,8 +209,8 @@ public class Engine {
         System.out.println("Hello, " + userName + "!");
         System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
 
-        int count = 3;
-        int roundRandom = 20;
+        final int count = 3;
+        final int roundRandom = 20;
         int n = 0;
         for (var i = 0; i < 3; i++) {
             int k = 0;
