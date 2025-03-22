@@ -242,6 +242,7 @@ public class Engine {
         if (n == count) {
             System.out.println("Congratulations, " + userName + "!");
         }
+        System.out.println("Congratulations, " + userName + "!");
         scanner.close();
     }
 }
