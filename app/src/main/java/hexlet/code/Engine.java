@@ -77,7 +77,7 @@ public class Engine {
         System.out.println("What is the result of the expression?");
         final int count = 3;
         int n = 0;
-        int roundRandom = 10;
+        final int roundRandom = 10;
         for (var i = 0; i < count; i++) {
             var n1 = Math.round(Math.random() * roundRandom);
             var n2 = Math.round(Math.random() * roundRandom);
@@ -168,8 +168,8 @@ public class Engine {
             int n2 = 0;
             int h = 0;
             var randStep = Math.round(Math.random() * roundRandom); //random step
-            int min = 5;
-            int max = 10;
+            final int min = 5;
+            final int max = 10;
             Random rand = new Random();
             int randLen = rand.nextInt(max - min + r) + min;
             Random rand2 = new Random();
@@ -212,7 +212,7 @@ public class Engine {
         final int count = 3;
         final int roundRandom = 20;
         int n = 0;
-        for (var i = 0; i < 3; i++) {
+        for (var i = 0; i < count; i++) {
             int k = 0;
             var h = "";
             var rand = Math.round(Math.random() * roundRandom); //random step
