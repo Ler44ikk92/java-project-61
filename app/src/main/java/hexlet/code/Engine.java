@@ -233,7 +233,6 @@ public class Engine {
             if (!answer.equals(h)) {
                 System.out.println(answer + " is wrong answer ;(. Correct answer was " + h);
                 System.out.println("Let's try again, " + userName + "!");
-                System.out.println("Congratulations, " + userName + "!");
                 break;
             } else {
                 System.out.println("Correct!");
